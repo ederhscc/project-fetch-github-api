@@ -49,12 +49,14 @@ const screen = {
                                             createEventsItens += `<li>${event.repo.name} - ${event.payload.ref_type}</li>`;
         });
 
-        if (user.createEvents.length > 0 && user.pushEvents.length > 0) {
+        if (user.createEvents.length > 0 || user.pushEvents.length > 0) {
             this.userProfile.innerHTML +=  `<div class= "events section">
                                                 <h3>Eventos</h3>
                                                 <ul>${pushEventsItens}</ul>
                                                 <ul>${createEventsItens}</ul>
                                             </div>`;
+        } else {
+            this.userProfile.innerHTML += `<h3>Eventos do usuário não encontrado! 😥</h3>` 
         }
     },
     renderNotFound() {
