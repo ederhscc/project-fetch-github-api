@@ -1,4 +1,4 @@
-import { baseUrl } from '/src/scripts/variables.js';
+import { baseUrl } from 'src/scripts/variables.js';
 
 async function getNumberFollowers(userName) {
     const response = await fetch(`${baseUrl}/${userName}`);
