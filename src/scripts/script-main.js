@@ -1,10 +1,10 @@
-import { getUser } from '/src/scripts/services/getUser.js';
-import { getRepositories } from '/src/scripts/services/getRepositories.js';
-import { getNumberFollowers } from '/src/scripts/services/getNumberFollowers.js';
-import { getNumberFollowing } from '/src/scripts/services/getNumberFollowing.js';
+import { getUser } from '/src/scripts/services/get-user.js';
+import { getRepositories } from '/src/scripts/services/get-repositories.js';
+import { getNumberFollowers } from '/src/scripts/services/get-number-followers.js';
+import { getNumberFollowing } from '/src/scripts/services/get-number-following.js';
 
-import { createEvent } from '/src/scripts/events/createEvent.js';
-import { pushEvent } from '/src/scripts/events/pushEvent.js';
+import { createEvent } from '/src/scripts/events/create-event.js';
+import { pushEvent } from '/src/scripts/events/push-event.js';
 
 import { user } from '/src/scripts/objects/user.js';
 import { screen } from '/src/scripts/objects/screen.js';
