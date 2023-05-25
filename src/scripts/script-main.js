@@ -3,7 +3,7 @@ import { getRepositories } from 'src/scripts/services/get-repositories.js';
 import { getNumberFollowers } from 'src/scripts/services/get-number-followers.js';
 import { getNumberFollowing } from 'src/scripts/services/get-number-following.js';
 
-import { createEvent } from '/src/scripts/events/create-event.js';
+import { createEvent } from 'src/scripts/events/create-event.js';
 import { pushEvent } from '/src/scripts/events/push-event.js';
 
 import { user } from '/src/scripts/objects/user.js';
